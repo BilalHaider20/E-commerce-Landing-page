@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap');
 body {
   margin: 0px;
   padding: 0;
@@ -78,6 +81,24 @@ header #nav li {
   align-items: center;
 }
 
+@keyframes borderAnimation {
+  0% {
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+  }
+  50% {
+    border-left: 4px solid rgb(51, 51, 51);
+    border-right: 0px solid black;
+  }
+  100% {
+    border-left: 0 solid black;
+    border-right: 4px solid rgb(61, 60, 60);
+  }
+}
+.animate-border {
+  animation: borderAnimation 1s infinite;
+}
+
 #search {
   width: 100%;
   height: 60px;
@@ -95,7 +116,7 @@ header #nav li {
 }
 #search-bar #categoies-search-btn {
   height: 40px;
-  width: 150px;
+  width: 180px;
   border-radius: 45px;
   border: 0px;
   background-color: #ffffff;
@@ -111,6 +132,7 @@ header #nav li {
   width: 80vw;
   height: 40px;
   color: #184363;
+  border: 0px;
   border-radius: 45px;
   font-size: 14px;
   padding-left: 12px;
@@ -125,6 +147,7 @@ header #nav li {
   background-color: #3cda5f;
   border-top-right-radius: 45px;
   border-bottom-right-radius: 45px;
+  border:0px;
   height: 40px;
   width: 50px;
   display: flex;
@@ -135,7 +158,7 @@ header #nav li {
 }
 
 main {
-  height: 2000px;
+  height: 2300px;
   background-color: #ffffff;
   margin: 0px auto;
   width: 1200px;
@@ -352,6 +375,182 @@ left: 650px;
   text-align:flex-start;
   width: 150px;
 }
+
+#section-5
+{
+  margin: 80px 0px;
+
+}
+#section-5 #container-5{
+  display: grid;
+  width: 95%;
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+  grid-template-rows: 400px;
+}
+#section-5-heading{
+  font-size: 65px;
+  line-height: 85px;
+  font-weight: 500;
+  width: 480px;
+  margin-left: 30px;
+  margin-top: 50px;
+  color: #2A3136;
+
+}
+#section-5 #polygon-gif
+{
+  position: relative;
+  top: -430px;
+}
+
+#Frame-32
+{
+  height: 700px;
+  width: 100%;
+  background-color:#B4FEC4;
+  margin: 30px 0px;
+}
+#Frame-32 #frame-32-heading{
+  color: #184363;
+  font-size: 45px;
+  line-height: 72px;
+  font-weight: 400;
+  width: 700px;
+  position: relative;
+  top: 90px;
+  left: 105px;
+}
+#Frame-32 #arrow-buttons
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 200px;
+  position: relative;
+  left: 960px;
+  top: 63px;
+}
+#arrow-buttons>button
+{
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+#testimonial-bar
+{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+  width: 85%;
+  margin: 30px auto;
+  position: relative;
+  top: 60px;
+}
+#testimonial-bar .testimonial
+{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  width: 340px;
+  gap: 20px;
+  box-shadow: 0px 12px 32px #0000005b;
+  border-radius: 12px;
+  padding:30px;
+}
+.testimonial .testimonial-text{
+  font-size:20px;
+  line-height:36px;
+  font-weight: 400;
+  color: #000000;
+  font-family: "Open Sans",sans-serif;
+  width:270px;
+}
+.testimonial .author
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  width:270px;
+  height:57px;
+  margin: 10px auto;
+}
+.author .author-details
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.author-details>h3
+{
+  font-size: 16px;
+  font-family: "Outfit";
+  color: #184363;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.author-details>p{
+  font-size: 14px;
+  color: #184363;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+#sign-up-bar
+{
+  width: 100%;
+  height:400px;
+  background: linear-gradient(80.81deg, rgba(60, 218, 94, 0.61) -0.15%, #F3F8FF 33.24%, #ffffff9c 60.13%, #f4f9ffcc 70.87%, rgba(60, 218, 94, 0.548) 109.42%);
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 20px 0px #3cda5e31;
+}
+#sign-up-bar .signup-inner
+{
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  margin: 0px auto;
+}
+.signup-inner img{
+  position: relative;
+  top:-8px
+}
+#sign-up-right
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap:50px;
+}
+#sign-up-right h1
+{
+  font-size: 42px;
+  font-family: "Outfit";
+  font-weight: 600;
+  line-height: 50px;
+  color: #0A2640;
+  width:539px;
+}
+#sign-up-right button{
+  background-color: #3CDA5F;
+  border-radius: 8px;
+  padding:18px 22px;
+  color:  #FBFBFB;
+  font-size: 20px;
+  font-family: "Outfit";
+  font-weight:500;
+  width: 250px;
+}
+
 
 footer {
   width: 100%;
